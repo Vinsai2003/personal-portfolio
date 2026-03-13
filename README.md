@@ -17,7 +17,7 @@ A professional, responsive personal portfolio website designed to showcase a mod
 - [Code Structure](#code-structure)
 - [Technical Details (Algorithms & Architecture)](#technical-details-algorithms--architecture)
 - [Testing & Validation](#testing--validation)
-- [Visual Documentation](#visual-documentation)
+- [Visual Documentation & UI Breakdown](#-visual-documentation--ui-breakdown)
 
 ---
 
@@ -123,20 +123,57 @@ The site follows a **Single Page Application (SPA)** architecture, utilizing int
 
 ---
 
-## Visual Documentation
+## 📸 Visual Documentation & UI Breakdown
 
-**Functional Screenshots:**
-1. **Hero Section**: ![Desktop Hero](../personal-portfolio/Visual-Documents/hero-section.png)
-2. **Project Grid**: ![Project Grid](../personal-portfolio/Visual-Documents/project-grid.png)
-3. **About section**: ![About section](../personal-portfolio/Visual-Documents/about-section-view.png)
-4. **skill section**: ![skill section](../personal-portfolio/Visual-Documents/skill-section.png)
-5. **project section**: ![project Section](../personal-portfolio/Visual-Documents/project-section-view.png)
-6. **contact section**: ![contact Section](../personal-portfolio/Visual-Documents/contact-section.png)
-7. **footer section**: ![footer Section](../personal-portfolio/Visual-Documents/footer-section.png)
-8. **Android view**: ![Android view](../personal-portfolio/Visual-Documents/android-view.png)
-9. **ios view**: ![ios view](../personal-portfolio/Visual-Documents/ios-view.png)
-10. **tablet view**: ![tablet view](../personal-portfolio/Visual-Documents/tablet-view.png)
-11. **desktop view**: ![Desktop view](../personal-portfolio/Visual-Documents/desktop-view.png)
+This section documents the visual language and responsive design implementation of the portfolio.
+
+### 🌓 Interface Showcase
+The UI is built with a focus on **Visual Hierarchy** and **User Experience**, utilizing a custom-themed Bootstrap 5 framework.
+
+<p align="center">
+  <a href="Visual-Documents/desktop-view.png">
+    <img src="Visual-Documents/desktop-view.png" width="90%" alt="Full Desktop View">
+  </a>
+  <br>
+  <b>Master Layout</b>: A comprehensive view of the sticky navigation, hero impact, and section spacing.
+</p>
+
+---
+
+### 📱 Performance & Responsiveness
+The site uses a **Mobile-First** approach. The grid system transitions seamlessly from single-column mobile layouts to multi-column desktop views.
+
+| **Mobile (Android)** | **Mobile (iOS)** | **Tablet (768px)** |
+| :---: | :---: | :---: |
+| <a href="Visual-Documents/android-view.png"><img src="Visual-Documents/android-view.png" width="180"></a> | <a href="Visual-Documents/ios-view.png"><img src="Visual-Documents/ios-view.png" width="180"></a> | <a href="Visual-Documents/tablet-view.png"><img src="Visual-Documents/tablet-view.png" width="280"></a> |
+| Optimized for Small Screens | Fluid iOS Rendering | Scaled Tablet Layout |
+
+---
+
+### 🔍 Component Deep Dive
+<details>
+<summary><b>Expand to view detailed UI components</b></summary>
+
+#### 1. Hero & Branding
+The first point of contact, featuring high-contrast typography and a clear Call-to-Action.
+[<img src="Visual-Documents/hero-section.png" width="600">](Visual-Documents/hero-section.png)
+
+#### 2. Information Architecture (About & Skills)
+Structured data presentation using Bootstrap cards and progress bars.
+[<img src="Visual-Documents/about-section-view.png" width="600">](Visual-Documents/about-section-view.png)
+[<img src="Visual-Documents/skill-section.png" width="600">](Visual-Documents/skill-section.png)
+
+#### 3. Portfolio Gallery
+A dynamic grid that showcases project diversity with hover-effect interactions.
+[<img src="Visual-Documents/project-grid.png" width="600">](Visual-Documents/project-grid.png)
+[<img src="Visual-Documents/project-section-view.png" width="600">](Visual-Documents/project-section-view.png)
+
+#### 4. Interaction Points (Form & Footer)
+Functional Formspree-powered contact section and a clean, minimalist footer.
+[<img src="Visual-Documents/contact-section.png" width="600">](Visual-Documents/contact-section.png)
+[<img src="Visual-Documents/footer-section.png" width="600">](Visual-Documents/footer-section.png)
+
+</details>
 
 
 

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerella Vinsai | Web Developer</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <style>
+        :root {
+            --bs-primary: #d35400;
+            --bg-warm: #fdfaf5;
+            --text-dark: #2d3436;
+            --font-serif: 'Playfair Display', serif;
+        }
+        body {
+            background-color: var(--bg-warm);
+            color: var(--text-dark);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        h1, h2, h3, .logo {
+            font-family: var(--font-serif);
+            font-weight: 700;
+        }
+        .navbar {
+            background-color: rgba(253, 250, 245, 0.95);
+            backdrop-filter: blur(5px);
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+        .btn-primary {
+            background-color: var(--bs-primary);
+            border-color: var(--bs-primary);
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+        }
+        .btn-primary:hover {
+            background-color: #ba4a00;
+            border-color: #ba4a00;
+        }
+        .btn-outline-dark {
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+        }
+        section {
+            padding: 100px 0;
+        }
+        .card {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .social-link {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-right: 1.5rem;
+            transition: color 0.3s;
+        }
+        .social-link:hover {
+            color: var(--bs-primary);
+        }
+        .hero-img-container {
+            position: relative;
+            display: inline-block;
+        }
+        .hero-img-accent {
+            position: absolute;
+            top: 20px;
+            right: -20px;
+            width: 100%;
+            height: 100%;
+            background-color: var(--bg-warm);
+            border: 2px solid var(--bs-primary);
+            border-radius: 20px;
+            z-index: -1;
+        }
+        .text-handwriting {
+            font-style: italic;
+            color: var(--bs-primary);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top py-3">
+        <div class="container border-0">
+            <a class="navbar-brand logo fs-3" href="#">Vinsai<span>Nerella</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-lg-4">
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#projects">Work</a></li>
+                    <li class="nav-item"><a class="nav-link fw-medium" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="hero" class="d-flex align-items-center min-vh-100">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7 text-center text-lg-start">
+                    <p class="text-uppercase fw-bold text-primary mb-2">Web Developer</p>
+                    <h1 class="display-1 mb-4">Building tools for <span class="text-handwriting">people.</span></h1>
+                    <p class="lead text-muted mb-5 col-lg-10">Hi, I'm Nerella Vinsai. I'm a developer focused on making the web a more friendly, accessible, and beautiful place for everyone.</p>
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#projects" class="btn btn-primary shadow-sm">See my work</a>
+                        <a href="#contact" class="btn btn-outline-dark">Let's chat</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="hero-img-container">
+                        <div class="hero-img-accent"></div>
+                        <img src="images/profile.jpg" alt="Nerella Vinsai" class="img-fluid rounded-4 shadow-lg" style="max-width: 380px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-white">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="display-4 mb-4">A bit about me</h2>
+                    <p class="fs-5 text-muted mb-4">I believe that technology should feel natural. My journey started with a curiosity for how things work, which quickly turned into a passion for building human-centered experiences.</p>
+                    <p class="fs-5 text-muted">With a background in development, I bridge the gap between complex code and intuitive interfaces. I'm not just writing lines of code; I'm solving problems for real people.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="p-4 bg-light rounded-4 text-center text-lg-start h-100">
+                                <h3 class="h1 text-primary mb-1">10+</h3>
+                                <p class="small fw-bold text-uppercase mb-0">Projects Built</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-4 bg-light rounded-4 text-center text-lg-start h-100">
+                                <h3 class="h1 text-primary mb-1">10+</h3>
+                                <p class="small fw-bold text-uppercase mb-0">GitHub Commits</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-4 bg-light rounded-4 text-center text-lg-start h-100">
+                                <h3 class="h1 text-primary mb-1">5+</h3>
+                                <p class="small fw-bold text-uppercase mb-0">Technologies</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-4 bg-light rounded-4 text-center text-lg-start h-100">
+                                <h3 class="h1 text-primary mb-1">3+</h3>
+                                <p class="small fw-bold text-uppercase mb-0">Certifications</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-4">My Toolkit</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 shadow-sm">
+                        <h3 class="h4 mb-4">Design</h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-light text-dark shadow-sm">Canva</span>
+                            <span class="badge bg-light text-dark shadow-sm">Adobe XD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 shadow-sm border-primary">
+                        <h3 class="h4 mb-4">Development</h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-light text-dark shadow-sm">HTML5</span>
+                            <span class="badge bg-light text-dark shadow-sm">Css3</span>
+                            <span class="badge bg-light text-dark shadow-sm">JavaScript</span>
+                            <span class="badge bg-light text-dark shadow-sm">Bootstrap</span>
+                            <span class="badge bg-light text-dark shadow-sm">Tailwind CSS</span>
+                            <span class="badge bg-light text-dark shadow-sm">React.js</span>
+                            <span class="badge bg-light text-dark shadow-sm">Node.js</span>
+                            <span class="badge bg-light text-dark shadow-sm">Express.js</span>
+                            <span class="badge bg-light text-dark shadow-sm">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 p-4 shadow-sm">
+                        <h3 class="h4 mb-4">Tools & Workflow</h3>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-light text-dark shadow-sm">Git & GitHub</span>
+                            <span class="badge bg-light text-dark shadow-sm">VS Code</span>
+                            <span class="badge bg-light text-dark shadow-sm">Postman</span>
+                            <span class="badge bg-light text-dark shadow-sm">NPM</span>
+                            <span class="badge bg-light text-dark shadow-sm">REST APIs</span>
+                            <span class="badge bg-light text-dark shadow-sm">Vercel</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="bg-light">
+        <div class="container">
+            <h2 class="display-4 text-center mb-5">Selected Work</h2>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card h-100 overflow-hidden shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVzu_EbS4CfCGvwMltZjZG90b4zE2oDFhh5w&s" class="card-img-top" alt="Tic-Tac-Toe Game" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 text-center text-lg-start">
+                            <h3 class="h4">Tic-Tac-Toe Game</h3>
+                            <p class="text-muted">A classic childhood game built with an unbeatable AI using the Minimax algorithm.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 overflow-hidden shadow-sm">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Rrp-LsgG-xMf1kDHnjzLf-so5pcRDw9B5A&s" class="card-img-top" alt="Simon Memory Game" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 text-center text-lg-start">
+                            <h3 class="h4">Simon Memory Game</h3>
+                            <p class="text-muted">A memory-testing game with colour effects and increasing difficulty levels </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100 overflow-hidden shadow-sm">
+                        <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?auto=format&fit=crop&w=800&q=80" class="card-img-top" alt="Photography Portfolio" style="height: 250px; object-fit: cover;">
+                        <div class="card-body p-4 text-center text-lg-start">
+                            <h3 class="h4">Photography Portfolio</h3>
+                            <p class="text-muted">An elegant, visually-driven landing page for photographers with a  gallery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <h2 class="display-4 mb-4">Let's connect</h2>
+                    <p class="fs-5 text-muted mb-5">Whether you have a question or just want to say hi, my inbox is always open. Let's build something meaningful together.</p>
+                    
+                    <div class="mb-4">
+                        <p class="small fw-bold text-uppercase text-primary mb-1">Send an email</p>
+                        <a href="mailto:[EMAIL_ADDRESS]" class="fs-4 text-dark text-decoration-none">[EMAIL_ADDRESS]</a>
+                    </div>
+                    
+                    <div class="mb-5">
+                        <p class="small fw-bold text-uppercase text-primary mb-1">Follow me</p>
+                        <div class="d-flex mt-3">
+                            <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                            <a href="#" class="social-link"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <!-- 
+                        FORMSPREE SETUP:
+                        1. Create a free account at https://formspree.io/
+                        2. Create a "New Form" and copy the unique ID.
+                        3. Replace "YOUR_FORMSPREE_ID" in the action URL below with your ID.
+                    -->
+                    <form id="contact-form" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="p-5 bg-white rounded-4 shadow-sm">
+                        <div class="mb-3">
+                            <input type="text" name="name" class="form-control form-control-lg bg-light border-0 py-3" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" class="form-control form-control-lg bg-light border-0 py-3" placeholder="Email Address" required>
+                        </div>
+                        <div class="mb-4">
+                            <textarea name="message" class="form-control form-control-lg bg-light border-0 py-3" rows="5" placeholder="Tell me what you're thinking about..." required></textarea>
+                        </div>
+                        <button type="submit" id="submit-btn" class="btn btn-primary w-100 fs-5 fw-bold py-3 shadow">Send Message</button>
+                        <div id="form-status" class="mt-3 text-center d-none"></div>
+                    </form>
+                </div>
+
+                <script>
+                    const form = document.getElementById("contact-form");
+                    const status = document.getElementById("form-status");
+                    const btn = document.getElementById("submit-btn");
+
+                    form.addEventListener("submit", async function(event) {
+                        event.preventDefault();
+                        btn.disabled = true;
+                        btn.innerText = "Sending...";
+                        
+                        const data = new FormData(event.target);
+                        fetch(event.target.action, {
+                            method: form.method,
+                            body: data,
+                            headers: {
+                                'Accept': 'application/json'
+                            }
+                        }).then(response => {
+                            if (response.ok) {
+                                status.innerHTML = "Thanks! Your message has been sent. ❤️";
+                                status.className = "mt-3 text-center text-success fw-bold";
+                                form.reset();
+                            } else {
+                                response.json().then(data => {
+                                    if (Object.hasOwn(data, 'errors')) {
+                                        status.innerHTML = data["errors"].map(error => error["message"]).join(", ");
+                                    } else {
+                                        status.innerHTML = "Oops! There was a problem submitting your form";
+                                    }
+                                    status.className = "mt-3 text-center text-danger fw-bold";
+                                })
+                            }
+                            status.classList.remove("d-none");
+                        }).catch(error => {
+                            status.innerHTML = "Oops! There was a problem submitting your form";
+                            status.className = "mt-3 text-center text-danger fw-bold";
+                            status.classList.remove("d-none");
+                        }).finally(() => {
+                            btn.disabled = false;
+                            btn.innerText = "Send Message";
+                        });
+                    });
+                </script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-white border-top">
+        <div class="container text-center">
+            <div class="mb-4">
+                <a href="#" class="logo fs-2 text-decoration-none text-dark">Nerella<span>Vinsai.</span></a>
+            </div>
+            <div class="d-flex justify-content-center gap-4 mb-4">
+                <a href="#about" class="text-dark fw-medium text-decoration-none">About</a>
+                <a href="#projects" class="text-dark fw-medium text-decoration-none">Work</a>
+                <a href="#contact" class="text-dark fw-medium text-decoration-none">Contact</a>
+            </div>
+            <p class="text-muted mb-0">Made with <i class="bi bi-heart-fill text-danger"></i> by Nerella Vinsai &copy; 2026</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
