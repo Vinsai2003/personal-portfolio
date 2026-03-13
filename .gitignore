@@ -1,0 +1,10 @@
+desktop.ini
+# Windows thumbnail cache
+Thumbs.db
+# OS X system files
+.DS_Store
+# IDE settings
+.vscode/
+.idea/
+# Node modules (just in case)
+node_modules/
